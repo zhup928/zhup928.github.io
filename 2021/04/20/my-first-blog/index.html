@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="MyBatis是一个优秀的基于Java的持久层框架，它内部封装了 JDBC，使开发者只需关注SQL 语句本身，而不用再花费精力去处理诸如注册驱动、创建Connection、配置Statement 等繁杂过程。&#x3D;&#x3D;（解耦）&#x3D;&#x3D; Mybatis 通过xml或注解的方式将要执行的各种 Statement（Statement、PreparedStatement 等）配置起来，并通过Java对象和State">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2021/04/20/my-first-blog/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="MyBatis是一个优秀的基于Java的持久层框架，它内部封装了 JDBC，使开发者只需关注SQL 语句本身，而不用再花费精力去处理诸如注册驱动、创建Connection、配置Statement 等繁杂过程。&#x3D;&#x3D;（解耦）&#x3D;&#x3D; Mybatis 通过xml或注解的方式将要执行的各种 Statement（Statement、PreparedStatement 等）配置起来，并通过Java对象和State">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-04-20T12:44:26.411Z">
+<meta property="article:modified_time" content="2019-10-09T12:08:38.231Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-my-first-blog" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/04/20/my-first-blog/" class="article-date">
+  <time class="dt-published" datetime="2021-04-20T12:44:26.411Z" itemprop="datePublished">2021-04-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h5 id="MyBatis"><a href="#MyBatis" class="headerlink" title="MyBatis"></a>MyBatis</h5><p>是一个优秀的基于Java的持久层框架，它内部封装了 JDBC，使开发者只需关注SQL 语句本身，而不用再花费精力去处理诸如注册驱动、创建Connection、配置Statement 等繁杂过程。==（解耦）==</p>
+<p>Mybatis 通过xml或注解的方式将要执行的各种 Statement（Statement、PreparedStatement 等）配置起来，并通过Java对象和Statement 中SQL的动态参数进行映射生成最终执行的 SQL 语句，最后由 MyBatis 框架执行 SQL 并将结果映射成 Java 对象并返回。</p>
+<h4 id="MyBatis-与-Hibernate"><a href="#MyBatis-与-Hibernate" class="headerlink" title="MyBatis 与 Hibernate"></a>MyBatis 与 Hibernate</h4><p>Hibernate 框架是提供了全面的数据库封装机制的 “全自动” ORM，即实现了 POJO 和数据库表之间的映射，以及 SQL 的自动生成和执行。</p>
+<p>相对于此，MyBatis 只能算作是 “半自动” ORM。其着力点，是在 POJO 类与 SQL 语句之间的映射关系。也就是说，MyBatis 并不会为程序员自动生成 SQL 语句。具体的 SQL 需要程序员自己编写，然后通过 SQL 语句映射文件，将 SQL 所需的参数，以及返回的结果字段映射到指定 POJO。因此，MyBatis 成为了“全自动”ORM 的一种有益补充。</p>
+<h3 id="MyBatis-的特点"><a href="#MyBatis-的特点" class="headerlink" title="MyBatis 的特点"></a>MyBatis 的特点</h3><ul>
+<li>在 XML 文件中配置 SQL 语句，实现了 SQL 语句与代码的分离，给程序的维护带来了很大便利。</li>
+<li>因为需要程序员自己去编写SQL语句，程序员可以结合数据库自身的特点灵活控制 SQL 语句，因此能够实现比 Hibernate 等全自动ORM框架更高的查询效率，能够完成复杂查询。</li>
+<li>简单，易于学习，易于使用，上手快。</li>
+</ul>
+<h5 id="Hibernate"><a href="#Hibernate" class="headerlink" title="Hibernate"></a>Hibernate</h5><p>全自动，提供HQL方言，数据库方言，程序员需编写HQL方言，然后由Hibernate自动转换为Oracle，MySQL，SQLServer能识别的SQL语句。</p>
+<h5 id="缺点："><a href="#缺点：" class="headerlink" title="缺点："></a>缺点：</h5><ol>
+<li>缺乏灵活性</li>
+<li>多表联查时候不方便，如：LEFT JOIN,INNER JOIN,RIGHT JOIN, 所以Hibernate对多表联查不友好，只在单表操作有优势。</li>
+<li>额外的学习。 HQL</li>
+<li>查询效率，Hibernate查询是普通JDBC    SQL查询的27倍，MyBatis比Hibernate还要快（MyBatis中的JDBC优化过）</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/04/20/my-first-blog/" data-id="cknq1dpix0000lcfn1yg55tmv" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2021/04/20/Spring%E5%B0%8F%E7%9F%A5%E8%AF%86/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2021/04/20/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/04/">April 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/04/20/%E9%9A%8F%E8%AE%B0/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2021/04/20/Spring%E5%B0%8F%E7%9F%A5%E8%AF%86/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2021/04/20/my-first-blog/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2021/04/20/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

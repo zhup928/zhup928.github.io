@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-随记" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/04/20/%E9%9A%8F%E8%AE%B0/" class="article-date">
+  <time class="dt-published" datetime="2021-04-20T12:57:47.437Z" itemprop="datePublished">2021-04-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>title:随记</p>
+<ol>
+<li>Java web项目打包文件是.war</li>
+<li>groupid 反转</li>
+<li>artifactid 项目名</li>
+<li>version 1.0.0-SNAPSHOT(快照版)</li>
+<li>关于版本号：</li>
+</ol>
+<ul>
+<li>1.0.0 第一个版本</li>
+<li>1.0.1 修复了一个bug</li>
+<li>1.1.0增加了一个功能</li>
+<li>2.0.0 结构变化</li>
+</ul>
+<ol start="6">
+<li>数据想要传输就需要序列化 Implement Serializable</li>
+<li>doget和dopost不能相互调用</li>
+<li>maven用tomcat部署是部署目录而不是.war或.jar</li>
+<li>高内聚低耦合：</li>
+</ol>
+<ul>
+<li>一个类只做一种事（日期类只管理日期，不做运算）</li>
+<li>一个方法只做一件事（只做四则运算中的一个）</li>
+<li>写且只写一次</li>
+</ul>
+<ol start="10">
+<li>业务复杂度与数据库中的事务：</li>
+</ol>
+<ul>
+<li>简单业务        只开一个事务</li>
+<li>普通业务       开启三个事务（连续操作三张表）</li>
+<li>复杂业务        开启七个事务</li>
+</ul>
+<ol start="11">
+<li>设计原则-重构原则：<br>事不过三，三则重构<br>提取方法提取类</li>
+</ol>
+<p>==12. get和post区别==<br>post：请求2次，第一次向服务器询问是否能接收数据，服务器同意后第二次将数据传输到服务器上。<br>get：请求1次。<br>语意区别：get获取，post提交。    </p>
+<ol start="13">
+<li>技术选型：</li>
+</ol>
+<ul>
+<li>搜索量   百度指数</li>
+<li>社区活跃度   github</li>
+<li>是否开源</li>
+</ul>
+<ol start="14">
+<li>Bootstrap   css/Html框架</li>
+<li>Jquery     js框架</li>
+<li>Vue        前端js框架</li>
+</ol>
+<p>==17. 响应式设计：Bootstrap的响应式css能够自适应于台式机，平板，手机==。</p>
+<p>==18. Bootstrap核心：网格系统==</p>
+<p>==19. CSS3的媒体查询==</p>
+<p>==20.Spring MVC 表单标签==<br>&lt;form:input path=”name”&gt;渲染一个HTML文本框，等同于：<input id="name" name = "name" type="text" value="" /></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/04/20/%E9%9A%8F%E8%AE%B0/" data-id="cknq1dpj90003lcfn4pm59br1" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Spring小知识" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/04/20/Spring%E5%B0%8F%E7%9F%A5%E8%AF%86/" class="article-date">
+  <time class="dt-published" datetime="2021-04-20T12:57:26.625Z" itemprop="datePublished">2021-04-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h3 id="Spring"><a href="#Spring" class="headerlink" title="Spring"></a>Spring</h3><p>==Spring 是于 2003 年兴起的一个轻量级的 Java 开发框架，它是为了解决企业应用开发的复杂性而创建的。Spring 的核心是控制反转（IoC）和面向切面编程（AOP）。简单来说，Spring 是一个分层的 Java SE/EE full-stack(一站式)轻量级开源框架。==</p>
+<p> Spring是一个轻量级JavaEE框架， 有两个技术：IoC和AOP。</p>
+<ul>
+<li>IOC 控制反转</li>
+<li>AOP 面向切面编程（核心是使用代理模式）</li>
+</ul>
+<h3 id="微服务架构"><a href="#微服务架构" class="headerlink" title="微服务架构"></a>微服务架构</h3><p>是一种架构思想，也就是分布式开发，但是分布式开发一定会遇到以下四个问题：</p>
+<ul>
+<li>这么多服务，客户端之间如何访问。</li>
+<li>这么多服务，服务之间如何通信。</li>
+<li>这么多服务，服务如何管理。</li>
+<li>这么多服务，系统崩溃了怎么办。</li>
+</ul>
+<p>同时，微服务有三大指标：</p>
+<ul>
+<li>高可用</li>
+<li>高并发</li>
+<li>高性能</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/04/20/Spring%E5%B0%8F%E7%9F%A5%E8%AF%86/" data-id="cknq1dpj30001lcfn4897eutc" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-my-first-blog" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/04/20/my-first-blog/" class="article-date">
+  <time class="dt-published" datetime="2021-04-20T12:44:26.411Z" itemprop="datePublished">2021-04-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h5 id="MyBatis"><a href="#MyBatis" class="headerlink" title="MyBatis"></a>MyBatis</h5><p>是一个优秀的基于Java的持久层框架，它内部封装了 JDBC，使开发者只需关注SQL 语句本身，而不用再花费精力去处理诸如注册驱动、创建Connection、配置Statement 等繁杂过程。==（解耦）==</p>
+<p>Mybatis 通过xml或注解的方式将要执行的各种 Statement（Statement、PreparedStatement 等）配置起来，并通过Java对象和Statement 中SQL的动态参数进行映射生成最终执行的 SQL 语句，最后由 MyBatis 框架执行 SQL 并将结果映射成 Java 对象并返回。</p>
+<h4 id="MyBatis-与-Hibernate"><a href="#MyBatis-与-Hibernate" class="headerlink" title="MyBatis 与 Hibernate"></a>MyBatis 与 Hibernate</h4><p>Hibernate 框架是提供了全面的数据库封装机制的 “全自动” ORM，即实现了 POJO 和数据库表之间的映射，以及 SQL 的自动生成和执行。</p>
+<p>相对于此，MyBatis 只能算作是 “半自动” ORM。其着力点，是在 POJO 类与 SQL 语句之间的映射关系。也就是说，MyBatis 并不会为程序员自动生成 SQL 语句。具体的 SQL 需要程序员自己编写，然后通过 SQL 语句映射文件，将 SQL 所需的参数，以及返回的结果字段映射到指定 POJO。因此，MyBatis 成为了“全自动”ORM 的一种有益补充。</p>
+<h3 id="MyBatis-的特点"><a href="#MyBatis-的特点" class="headerlink" title="MyBatis 的特点"></a>MyBatis 的特点</h3><ul>
+<li>在 XML 文件中配置 SQL 语句，实现了 SQL 语句与代码的分离，给程序的维护带来了很大便利。</li>
+<li>因为需要程序员自己去编写SQL语句，程序员可以结合数据库自身的特点灵活控制 SQL 语句，因此能够实现比 Hibernate 等全自动ORM框架更高的查询效率，能够完成复杂查询。</li>
+<li>简单，易于学习，易于使用，上手快。</li>
+</ul>
+<h5 id="Hibernate"><a href="#Hibernate" class="headerlink" title="Hibernate"></a>Hibernate</h5><p>全自动，提供HQL方言，数据库方言，程序员需编写HQL方言，然后由Hibernate自动转换为Oracle，MySQL，SQLServer能识别的SQL语句。</p>
+<h5 id="缺点："><a href="#缺点：" class="headerlink" title="缺点："></a>缺点：</h5><ol>
+<li>缺乏灵活性</li>
+<li>多表联查时候不方便，如：LEFT JOIN,INNER JOIN,RIGHT JOIN, 所以Hibernate对多表联查不友好，只在单表操作有优势。</li>
+<li>额外的学习。 HQL</li>
+<li>查询效率，Hibernate查询是普通JDBC    SQL查询的27倍，MyBatis比Hibernate还要快（MyBatis中的JDBC优化过）</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/04/20/my-first-blog/" data-id="cknq1dpix0000lcfn1yg55tmv" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/04/20/hello-world/" class="article-date">
+  <time class="dt-published" datetime="2021-04-20T12:39:36.605Z" itemprop="datePublished">2021-04-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/04/20/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/04/20/hello-world/" data-id="cknq1dpj50002lcfnbk2i3a7j" data-title="Hello World" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/04/">April 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/04/20/%E9%9A%8F%E8%AE%B0/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2021/04/20/Spring%E5%B0%8F%E7%9F%A5%E8%AF%86/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2021/04/20/my-first-blog/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2021/04/20/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
